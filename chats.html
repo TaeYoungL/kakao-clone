@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Friends | Kakao Clone</title>
+    <title>Chats | Kakao Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -30,67 +30,43 @@
     </div>
     <header class="header">
       <div class="header__header-column">
-        <h1 class="header__title">Friends</h1>
+        <h1 class="header__title">Chats</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
           <i class="fas fa-search"></i>
         </span>
-
+        <span class="header__icon">
+          <i class="far fa-comment"></i>
+        </span>
         <span class="header__icon">
           <i class="fas fa-cog"></i>
         </span>
       </div>
     </header>
-    <main class="friends">
-      <header class="friends__header">
-        <div class="friends__friend friend">
-          <div class="friend__column">
-            <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
-            <div class="friend__content">
-              <span class="friend__name">
-                Nicolás Serrano
-              </span>
-              <span class="friend__status">
-                nomadcoders.co
-              </span>
+    <main class="chats">
+      <ul class="chats__list">
+        <li class="chats__chat chat">
+          <a href="chat.html">
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img src="images/avatar.jpg" class="m-avatar friend__avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Lynn
+                  </span>
+                  <span class="friend__bottom-text">
+                    Going home!
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">
+                  March 8
+                </span>
+              </div>
             </div>
-          </div>
-        </div>
-      </header>
-      <div class="friends__plus">
-        <h5 class="friends__title">Plus friend</h5>
-        <div class="friends__friend friend">
-          <div class="friend__column">
-            <img src="images/avatar.jpg" class="friend__avatar" />
-            <div class="friend__content">
-              <span class="friend__name">
-                Plus Friend
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <ul class="friends__list">
-        <h5 class="friends__title">Friends 14</h5>
-        <li class="friends__friend friend friend--lg">
-          <div class="friend__column">
-            <img src="images/avatar.jpg" class="friend__avatar" />
-            <div class="friend__content">
-              <span class="friend__name"> Nicolás Serrano </span>
-              <span class="friend__status">
-                nomadcoders.co
-              </span>
-            </div>
-          </div>
-          <div class="friend__column">
-            <div class="friend__now-listening">
-              <span>
-                FTISLAND (FT NomadCoders)
-                <i class="fas fa-play"></i>
-              </span>
-            </div>
-          </div>
+          </a>
         </li>
       </ul>
     </main>
