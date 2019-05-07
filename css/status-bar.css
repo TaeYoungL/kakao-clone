@@ -2,13 +2,26 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
-  opacity: 0.7;
+  /* padding: 10px; */
+  opacity: 0.8;
+  position: relative;
 }
-
+.status-cover {
+  top: -5px;
+  left: -5px;
+  width: 120%;
+  height: 200%;
+  position: absolute;
+  background-image: linear-gradient(to left, #00c6ff, #0072ff);
+  opacity: 0.4;
+}
 .status-bar i {
   font-size: 14px;
 }
 
 .status-bar .status-bar__battery-level {
   margin-left: 5px;
+}
+.status-bar__clock {
+  font-weight: bold;
 }
